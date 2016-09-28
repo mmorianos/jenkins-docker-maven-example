@@ -30,13 +30,13 @@ node {
     
   stage name: 'Push Image', concurrency: 1
   // All the tests passed. We can now retag and push the 'latest' image
-  docker.withRegistry('https://nexus.doyouevenco.de', 'nexus-admin') {
+  docker.withRegistry('https://nexus.coxautodev.com', 'nexus-admin') {
      img.push('latest')
   }
     
   stage 'Pull Image'
   // Now let's pull it, just to test that a pull from Nexus works correctly
-  docker.withRegistry('https://nexus.doyouevenco.de', 'nexus-admin') {
+  docker.withRegistry('https://nexus.coxautodev.com', 'nexus-admin') {
      docker.image("jenkins-docker-maven-example:latest").pull()
   }
   
