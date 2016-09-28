@@ -1,12 +1,12 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "nexus.doyouevenco.de/jenkins-docker-maven-example:latest",
+    "Name": "nexus.coxautodev.com/jenkins-docker-maven-example:latest",
     "Update": "true"
   },
   "Authentication": {
-    "Bucket": "cai-nexus-creds",
-    "Key": "creds.config"
+    "Bucket": "jenkins-docker-readonly-credentials-us-east-1-1475083683-22394",
+    "Key": "readonly-config.json"
   },
   "Ports": [
     {
